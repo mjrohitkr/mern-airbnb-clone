@@ -13,9 +13,9 @@ let listingSchema = new schema({
     },
     image : {
         type : String,
-        default : 'https://www.keycdn.com/support/image-processing',
+        default : 'https://images.wsj.net/im-81430597?width=1280&size=1',
         set : (v) => v==="" ? 
-        'https://www.keycdn.com/support/image-processing' 
+        'https://images.wsj.net/im-81430597?width=1280&size=1' 
         : v
     },
     price : {
@@ -29,6 +29,16 @@ let listingSchema = new schema({
     country : {
         type : String,
         required : true
+    },
+    reviews : [
+        {
+            type : schema.Types.ObjectId,
+            ref : "Review"
+        }
+    ],
+    owner : {
+        type : schema.Types.ObjectId,
+        ref : "User"
     }
 })
 

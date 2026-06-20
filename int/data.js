@@ -3,7 +3,7 @@ const sampleData = [
   {
     title: "Ocean Breeze Villa",
     description: "Sea-facing luxury stay",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1800,
     location: "Candolim, Goa",
     country: "India"
@@ -11,7 +11,7 @@ const sampleData = [
   {
     title: "Mountain View Retreat",
     description: "Peaceful hilltop villa",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1500,
     location: "Manali, Himachal Pradesh",
     country: "India"
@@ -19,7 +19,7 @@ const sampleData = [
   {
     title: "Royal Heritage House",
     description: "Experience royal living",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 2200,
     location: "Udaipur, Rajasthan",
     country: "India"
@@ -27,7 +27,7 @@ const sampleData = [
   {
     title: "Lake Side Villa",
     description: "Beautiful lake view stay",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1700,
     location: "Nainital, Uttarakhand",
     country: "India"
@@ -35,7 +35,7 @@ const sampleData = [
   {
     title: "Forest Escape Villa",
     description: "Stay in nature",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1400,
     location: "Wayanad, Kerala",
     country: "India"
@@ -43,7 +43,7 @@ const sampleData = [
   {
     title: "City Luxury Apartment",
     description: "Modern living in city center",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 2000,
     location: "Mumbai, Maharashtra",
     country: "India"
@@ -51,7 +51,7 @@ const sampleData = [
   {
     title: "Beach Paradise Villa",
     description: "Steps away from beach",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 2500,
     location: "Baga, Goa",
     country: "India"
@@ -59,7 +59,7 @@ const sampleData = [
   {
     title: "Snow Peak Cottage",
     description: "Snow covered mountain stay",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1600,
     location: "Shimla, Himachal Pradesh",
     country: "India"
@@ -67,7 +67,7 @@ const sampleData = [
   {
     title: "Desert Luxury Camp",
     description: "Stay in the golden desert",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1300,
     location: "Jaisalmer, Rajasthan",
     country: "India"
@@ -75,7 +75,7 @@ const sampleData = [
   {
     title: "Tea Garden Villa",
     description: "Surrounded by tea estates",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1450,
     location: "Munnar, Kerala",
     country: "India"
@@ -83,7 +83,7 @@ const sampleData = [
   {
     title: "Riverfront Villa",
     description: "Relax by the river",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1550,
     location: "Rishikesh, Uttarakhand",
     country: "India"
@@ -91,7 +91,7 @@ const sampleData = [
   {
     title: "Luxury Sky Penthouse",
     description: "Top floor city view",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 3000,
     location: "Bangalore, Karnataka",
     country: "India"
@@ -99,7 +99,7 @@ const sampleData = [
   {
     title: "Island Style Villa",
     description: "Tropical vibe stay",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 2100,
     location: "Andaman Islands",
     country: "India"
@@ -107,7 +107,7 @@ const sampleData = [
   {
     title: "Hilltop Sunset Villa",
     description: "Amazing sunset view",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 1750,
     location: "Ooty, Tamil Nadu",
     country: "India"
@@ -115,7 +115,7 @@ const sampleData = [
   {
     title: "Modern Glass Villa",
     description: "Stylish and premium stay",
-    image: "https://www.keycdn.com/support/image-processing",
+    image: "https://images.wsj.net/im-81430597?width=1280&size=1",
     price: 2800,
     location: "Pune, Maharashtra",
     country: "India"

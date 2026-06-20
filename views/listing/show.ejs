@@ -2,30 +2,72 @@
 <body>
     <div class="row mt-3">
         <div class="col-8 offset-3">
-    <h3>Listing Details</h3>
+    <h3><%=allListing.title%></h3>
   </div>
-    <div class="card col-6 offset-3 show-card">
+    <div class="card col-6 offset-3 show-card listing-card">
   <img src="<%=allListing.image%>" class="card-img-top" alt="listing_image">
   <div class="card-body">
-    <p class="card-texts mt-2">
-        <b><%=allListing.title%></b><br>
-        <%=allListing.description%> <br>
-        &#8377; <%=allListing.price.toLocaleString("en-IN")%> <br>
-        <%=allListing.location%> <br>
-        <%=allListing.country%> <br>
-    </p>
+        <p class="card-text"><i>Owned by <%= allListing.owner.username %></i></p>
+        <p class="card-text"><%=allListing.description%></p>
+        <p class="card-text"><%=allListing.price.toLocaleString("en-IN")%></p>
+        <p class="card-text"><%=allListing.location%></p>
+        <p class="card-text"><%=allListing.country%></p>
  </div>
   </div>
 
-  <div class="btns">
+  <% if(currUser && currUser._id.equals(allListing.owner._id)) {%>
+    <div class="btns">
         <a href="/listing/<%=allListing.id%>/edit" class="edit btn btn-dark col-1 offset-3 add-btn">Edit</a>
 
         <form method="post" action="/listing/<%=allListing.id%>?_method=DELETE">
         <button class="btn btn-dark add-btn-dl offset-5" onclick="return confirm('Are you sure?')">Delete</button>
-    </form>
+        </form>
     </div>
-   
+   <% } %>
  
 </div>
+<hr>
+    <div class="row mt-3">
+        <h4>Leave a Review</h4>
     </div>
+    <form class="needs-validation mb-3" method="post" action="/listings/<%=allListing.id%>/reviews" novalidate >
+        <div class="mb-3 mt-3">
+            <label for="rating" class="form-label">Rating</label>
+            <input type="range" min="1" max="5" name="review[rating]" id="review[rating]" class="form-range" >
+        </div>
+        <br>
+        <div>
+            <label for="comment"  class="form-label" >Comments</label>
+            <textarea name="review[comment]" id="comment" cols="30" rows="5" class="form-control" required placeholder="Write Something..." ></textarea>
+            <div class="invalid-feedback">Please sumbit some comments for reviews</div><br>
+            <button class="btn btn-outline-dark">Sumbit</button>
+        </div>
+    </form>
+
+    <hr>
+    <p><b>All Reviews</b></p>
+
+   
+    <div class="row">  
+  
+        <% for(review of allListing.reviews) {%>
+            
+              <div class="card ms-3 col-5 mt-3 mb-3">
+        <div class="card-body">
+            <h5 class="card-title mt-1"><%=currUser.username%></h5>
+            <p class="card-text"><%=review.comment%></p>
+            <p class="card-text"><%=review.rating%> stars</p>
+            <form method="post" class="mb-3" action="/listings/<%=allListing._id%>/reviews/<%=review._id%>?_method=DELETE">
+                <button class="btn btn-outline-dark " onclick="return confirm('Are you sure? Do you want to delete Review?')" >Delete</button>
+            </form>
+            
+        </div>
+        </div>
+    <% } %>
+    
+    </div>
+    </div>
+
+
+
 </body>
